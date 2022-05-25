@@ -13,7 +13,7 @@
   <div class="row">
     <div class="col-3">
       <% @post_images.each do |post_image| %>
-      <div>
+      <div class="border border-primary">
         <%= link_to post_image_path(post_image.id) do%>
           <%= image_tag post_image.get_image(200,200) %>
         <% end %>
