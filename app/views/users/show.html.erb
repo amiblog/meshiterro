@@ -4,10 +4,10 @@
   </div>
   <div class="row">
     <%= image_tag @user.get_profile_image(100,100)%>
+  </div>
     <% if @user==current_user %>
       <h4><%= link_to "プロフィール編集", edit_user_path(@user.id)%></h4>
     <% end %>
-  </div>
   <div class="row">
     <div class="col-3">
       <% @post_images.each do |post_image| %>
